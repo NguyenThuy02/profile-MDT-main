@@ -4,13 +4,15 @@ import React from "react";
 const Pagetwo = () => {
   return (
     <>
-      <table>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
-      </table>
+      <div>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </table>
+      </div>
     </>
   );
 };
