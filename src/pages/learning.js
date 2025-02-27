@@ -8,6 +8,8 @@ import PageHeader from "@components/common/PageHeader";
 import TestimonialTwo from "@components/testimonial/TestimonialTwo";
 import Link from "next/link";
 import Pagetwo from "@components/learning/Pagetwo";
+import Pagethree from "@components/learning/Pagethree";
+
 import "@pages/learning";
 
 const Learning = () => {
@@ -23,15 +25,21 @@ const Learning = () => {
           <h1 className="text-center">Learning</h1>
         </div>
         <div className="ml-20">
-          <h3>
+          <h4>
             Kho lưu trữ
             <Pageone ptClass="pt-120" />
-          </h3>
+          </h4>
         </div>
-        <h3>
+        <br></br>
+        <h4>
           Xem thêm
+          <Pagethree />
+        </h4>
+        <br></br>
+        <h4>
+          Bảng thông tin
           <Pagetwo />
-        </h3>
+        </h4>
 
         <a href="login" title="login">
           Đăng nhập
