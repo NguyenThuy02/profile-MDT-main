@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import Link from "next/link";
 
 const Pageone = () => {
-  const [dk, setdk] = useState(false);
-
-  const handleClick = () => {
-    setdk(!dk);
-  };
-
   return (
     <>
       <div className="text-center round-full text-gray">
