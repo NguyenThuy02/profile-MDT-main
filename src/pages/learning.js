@@ -42,9 +42,11 @@ const Learning = () => {
         </a>
       </main>
 
-      <BasePackage />
+      {/*
+        <BasePackage />
       <PlusPackage />
       <PremiumPackage />
+        */}
       <Footer footerLight />
     </Layout>
   );
