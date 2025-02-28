@@ -69,6 +69,22 @@ const Pageone = () => {
             </div>
           </div>
         </div>
+        <div className="col-md-6 col-xl-3 col-sm-12">
+          <div className="cyber-price-chart">
+            <div className="position-relative single-pricing-wrap rounded bg-white custom-shadow p-2 mb-4 mb-lg-0">
+              <Link href="/pic" className=" mt-2">
+                <img
+                  src="https://i.pinimg.com/474x/f0/9f/ce/f09fce237cb325d4abedfb46315c7e48.jpg"
+                  alt="Image 5"
+                  width={250}
+                  height={250}
+                />
+                <br></br>
+                Ảnh 5
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
