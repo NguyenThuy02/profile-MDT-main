@@ -3,9 +3,13 @@ h1 {
 }
 
 img {
-  padding: 25px;
+  padding: 15px;
   margin: auto;
-  border-radius: 15%;
+  border-radius: 10%;
+}
+
+main {
+  flex-wrap: wrap;
 }
 
 Link {
@@ -32,20 +36,14 @@ a {
 }
 
 table {
-  margin: auto;
   font-size: small;
   text-align: left;
-  border: 2.5px solid rgba(192, 21, 204, 0.821);
+  border: 2.5px rgba(192, 21, 204, 0.821);
   font-style: 100;
 }
 
-td,
-th {
+tr {
   border: 1px solid rgba(192, 21, 204, 0.821);
-  color: black;
-  padding-right: 45px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   text-align: left;
 }
 
@@ -53,6 +51,12 @@ div {
   padding: 5px;
 }
 
+.pic {
+  color: rgb(93, 15, 97);
+  text-align: center;
+  margin: auto;
+}
+
 .pic:hover {
-  color: rgb(53, 224, 31);
+  color: rgb(13, 157, 18);
 }

@@ -2,33 +2,29 @@ import React from "react";
 import Layout from "@layout/Layout";
 import Footer from "@layout/Footer/Footer";
 import Navbar from "@layout/Header/Navbar";
-import FaqTwo from "@components/faq/FaqTwo";
-import Pageone from "@components/learning/Pageone";
 import PageHeader from "@components/common/PageHeader";
-import TestimonialTwo from "@components/testimonial/TestimonialTwo";
-import Link from "next/link";
+import BasePackage from "@components/app-management/BasePackage";
+import PlusPackage from "@components/app-management/plusPackage";
+import PremiumPackage from "@components/app-management/PremiumPackage";
+import Pageone from "@components/learning/Pageone";
 import Pagetwo from "@components/learning/Pagetwo";
 import Pagethree from "@components/learning/Pagethree";
 
-import "@pages/learning";
-
 const Learning = () => {
   return (
-    <Layout title="Learning" desc="Learning page">
+    <Layout title="Learning" desc="Explore our smart home packages">
       <Navbar classOption="navbar-light" />
       <PageHeader
-        title="Đây là trang Learning"
-        desc="Trang này do Nguyệt Thúy design nhé."
+        title="Smart Home Solutions"
+        desc="Experience the future of home automation with our cutting-edge smart home packages. From basic motion detection to advanced remote control systems."
       />
-      <>
+      <main>
         <div>
           <h1 className="text-center">Learning</h1>
         </div>
         <div className="ml-20">
-          <h4>
-            Kho lưu trữ
-            <Pageone ptClass="pt-120" />
-          </h4>
+          <h4>Kho lưu trữ</h4>
+          <Pageone />
         </div>
         <br></br>
         <h4>
@@ -44,10 +40,12 @@ const Learning = () => {
         <a href="login" title="login">
           Đăng nhập
         </a>
-      </>
-      <FaqTwo />
-      <TestimonialTwo sectionBgClass="bg-white" swiperBgClass="bg-white" />
-      <Footer />
+      </main>
+
+      <BasePackage />
+      <PlusPackage />
+      <PremiumPackage />
+      <Footer footerLight />
     </Layout>
   );
 };
