@@ -12,33 +12,28 @@ import Pagethree from "@components/learning/Pagethree";
 
 const Learning = () => {
   return (
-    <Layout title="Learning" desc="Explore our smart home packages">
+    <Layout title="Learning" desc="learning home">
       <Navbar classOption="navbar-light" />
-      <PageHeader
-        title="Smart Home Solutions"
-        desc="Experience the future of home automation with our cutting-edge smart home packages. From basic motion detection to advanced remote control systems."
-      />
+      <PageHeader title="Learning" desc="Đây là trang do me design." />
       <main>
-        <div>
-          <h1 className="text-center">Learning</h1>
-        </div>
-        <div className="ml-20">
-          <h4>Kho lưu trữ</h4>
-          <Pageone />
-        </div>
-        <br></br>
-        <h4>
-          Xem thêm
-          <Pagethree />
-        </h4>
-        <br></br>
-        <h4>
-          Bảng thông tin
-          <Pagetwo />
-        </h4>
+        <div className="title">Learning</div>
+        <>
+          <div className="content">Kho lưu trữ</div>
 
-        <a href="login" title="login">
-          Đăng nhập
+          <Pageone />
+
+          <div className="content mb-2">Bảng thông tin về các loài hoa</div>
+          <Pagetwo />
+
+          <Pagethree />
+        </>
+        <a
+          href="demo"
+          title="demo"
+          className="content mr-15 mt-3"
+          style={{ float: "right" }}
+        >
+          Xem Demo
         </a>
       </main>
 
