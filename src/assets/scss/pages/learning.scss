@@ -256,7 +256,7 @@ th {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Màu nền */
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -273,7 +273,7 @@ th {
 
 .video-info {
   width: 40%;
-  padding: 70px;
+  padding: 30px;
 }
 
 div {
@@ -293,4 +293,22 @@ div {
 .video-info li {
   font-size: 14px;
   margin-bottom: 5px;
+}
+
+/* Thêm media query cho màn hình nhỏ hơn 1024px */
+@media screen and (max-width: 750px) {
+  .video-section {
+    flex-direction: column; /* Đổi hướng flex thành cột */
+  }
+
+  .video-player {
+    width: 100%; /* Video chiếm toàn bộ chiều rộng */
+    max-width: none; /* Xóa giới hạn max-width */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới video */
+  }
+
+  .video-info {
+    width: 100%; /* Thông tin chiếm toàn bộ chiều rộng */
+    padding: 20px; /* Giảm padding cho phù hợp màn hình nhỏ */
+  }
 }
