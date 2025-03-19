@@ -24,7 +24,7 @@
 .pic {
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  padding: 15px 5px 10px 5px;
+  padding: 15px 7px 3px 7px;
   margin: 15px;
   box-shadow: 0 4px 10px rgb(92, 154, 246), 0 -4px 10px rgb(89, 151, 245),
     4px 0 10px rgba(0, 0, 0, 0.1), -4px 0 10px rgba(0, 0, 0, 0.1);
@@ -47,34 +47,10 @@
 .col-custom {
   flex: 0 0 100%;
   max-width: 100%;
+  padding: 0 5px 0 5px;
 }
 
-.pic {
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-  padding: 15px 5px 10px 5px;
-  margin: 15px;
-  box-shadow: 0 4px 10px rgb(92, 154, 246), 0 -4px 10px rgb(89, 151, 245),
-    4px 0 10px rgba(0, 0, 0, 0.1), -4px 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  overflow: hidden;
-}
-
-.pic:hover {
-  transform: scale(1.05);
-  z-index: 1;
-}
-
-.rounded-image {
-  border-radius: 5%;
-}
-
-.col-custom {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-@media (min-width: 576px) {
+@media (min-width: 540px) {
   .col-custom {
     flex: 0 0 50%;
     max-width: 50%;
@@ -99,7 +75,7 @@
   .col-custom {
     flex: 0 0 20%;
     max-width: 20%;
-    padding: 0 25px 10px 25px;
+    padding: 0 15px 10px 15px;
   }
 }
 
@@ -203,11 +179,13 @@ th {
 }
 
 //page 3
+//form đăng ký
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .form-box {
@@ -253,7 +231,7 @@ th {
 .form-button {
   width: 100%;
   padding: 0.75rem;
-  background-color: rgb(92, 154, 245);
+  background-color: rgb(54, 122, 224);
   color: white;
   font-weight: 600;
   border-radius: 0.375rem;
@@ -271,4 +249,48 @@ th {
 .form-button:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(80, 40, 167, 0.5); /* Thêm hiệu ứng focus */
+}
+
+//page 4
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Màu nền */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: auto;
+}
+
+.video-player {
+  width: 50%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-info {
+  width: 40%;
+  padding: 70px;
+}
+
+div {
+  font-size: 20px;
+}
+
+.video-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.video-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.video-info li {
+  font-size: 14px;
+  margin-bottom: 5px;
 }

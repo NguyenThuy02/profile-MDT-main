@@ -5,7 +5,8 @@ const Pagethree = () => {
     fullName: "",
     email: "",
     phone: "",
-    flowerType: "rose",
+    flowerType: "rose", // Mặc định là hoa hồng
+    otherFlower: "", // Dữ liệu nhập cho hoa khác
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -30,6 +31,7 @@ const Pagethree = () => {
       email: "",
       phone: "",
       flowerType: "rose", // Đặt lại giá trị mặc định của form
+      otherFlower: "", // Đặt lại giá trị tên hoa khác
     });
   };
 
@@ -100,8 +102,27 @@ const Pagethree = () => {
                 <option value="lily">Hoa ly</option>
                 <option value="orchid">Hoa lan</option>
                 <option value="tulip">Hoa tulip</option>
+                <option value="other">Khác</option> {/* Thêm option "Khác" */}
               </select>
             </div>
+
+            {/* Nếu chọn "Khác", hiển thị input để nhập tên hoa */}
+            {formData.flowerType === "other" && (
+              <div className="form-group">
+                <label htmlFor="otherFlower" className="form-label">
+                  Nhập tên hoa
+                </label>
+                <input
+                  type="text"
+                  id="otherFlower"
+                  name="otherFlower"
+                  className="form-input"
+                  value={formData.otherFlower}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            )}
 
             <div className="form-group">
               <button type="submit" className="form-button">
@@ -126,7 +147,10 @@ const Pagethree = () => {
               <strong>Số điện thoại:</strong> {formData.phone}
             </p>
             <p>
-              <strong>Loại hoa:</strong> {formData.flowerType}
+              <strong>Loại hoa:</strong>{" "}
+              {formData.flowerType === "other"
+                ? formData.otherFlower
+                : formData.flowerType}
             </p>
           </div>
           <button

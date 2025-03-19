@@ -9,6 +9,7 @@ import PageHeader from "@components/common/PageHeader";
 import Pageone from "@components/learning/Pageone";
 import Pagetwo from "@components/learning/Pagetwo";
 import Pagethree from "@components/learning/Pagethree";
+import Pagefour from "@components/learning/Pagefour";
 
 const Learning = () => {
   return (
@@ -19,12 +20,11 @@ const Learning = () => {
         <div className="title">Learning</div>
         <>
           <div className="content">Kho lưu trữ</div>
-
           <Pageone />
-
           <div className="content mb-2">Bảng thông tin về các loài hoa</div>
           <Pagetwo />
 
+          <Pagefour />
           <Pagethree />
         </>
         <a
@@ -48,3 +48,5 @@ const Learning = () => {
 };
 
 export default Learning;
+
+// hihihihihihihihihihihih
